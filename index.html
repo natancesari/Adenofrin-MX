@@ -141,16 +141,19 @@
       display: flex;
       align-items: baseline;
       justify-content: center;
-      gap: 10px;
+      gap: 14px;
       flex-wrap: wrap;
       margin-bottom: 14px;
     }
 
-    .price-label {
-      font-size: 0.85rem;
-      font-weight: 700;
+    .old-price {
+      font-size: 1rem;
       color: var(--text-muted);
-      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .old-price s {
+      color: var(--text-muted);
     }
 
     .new-price {
@@ -158,6 +161,15 @@
       font-weight: 900;
       color: var(--blue-dark);
       line-height: 1;
+    }
+
+    .discount-tag {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--blue-dark);
+      background-color: var(--blue-light);
+      padding: 3px 8px;
+      border-radius: 4px;
     }
 
     .btn-buy {
@@ -346,12 +358,13 @@
         <!-- Preço Limpo + Botão Laranja-Coral -->
         <div class="purchase-box">
           <div class="price-display">
-            <span class="price-label">Oferta en México:</span>
+            <span class="old-price"><s>1180 MXN</s></span>
             <strong class="new-price">590 MXN</strong>
+            <span class="discount-tag">-50%</span>
           </div>
 
           <a href="https://ld1fu.doctorluckysh.com/l" class="btn-buy" referrerpolicy="origin-when-cross-origin">
-            Pedir Ahora
+            Pedir Ahora con 50% de Descuento
           </a>
 
           <div class="cod-highlight">
